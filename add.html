@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- ----------Header --------->
+    <header>
+      <div class="container">
+        <div class="header-center">
+          <div class="icons">
+            <ul>
+              <li>
+                <a href=""> <i class="bi bi-facebook hover"></i> </a>
+              </li>
+              <li>
+                <a href=""> <i class="bi bi-twitter hover"></i> </a>
+              </li>
+              <li>
+                <a href=""> <i class="bi bi-globe2 hover"></i> </a>
+              </li>
+              <li>
+                <a href=""> <i class="bi bi-behance hover"></i> </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact">
+            <a href="#">+953 012 3654 896</a>
+            <a href="#"> support@colorlib.com</a>
+          </div>
+          <div class="contact-icons">
+            <i class="bi bi-telephone-fill"></i>
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ----------Navbar --------->
+    <nav>
+      <div class="container">
+        <div class="nav-center">
+          <div class="img">
+            <img src="./assets/img/logo (1).png" alt="" />
+          </div>
+          <div class="menu-list">
+            <ul>
+              <li><a class="hover" href="./index.html">home</a></li>
+              <li><a class="hover" href="">About</a></li>
+              <li><a class="hover" href="">Courses</a></li>
+              <li><a class="hover" href="">Events</a></li>
+              <li><a class="hover" href="">Gallery</a></li>
+              <li><a class="hover" href="">Blog</a></li>
+              <li><a class="hover" href="">Pages</a></li>
+              <li><a class="hover" href="">Contact</a></li>
+              <li><a class="hover" href="./add.html">ADD</a></li>
+            </ul>
+          </div>
+          <i class="bi bi-list" id="menu-icon" onclick="openMenu()"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ----------Banner --------->
+    <section id="banner">
+      <div class="banner-center">
+        <form action="add" id="form">
+          <input type="file" id="file" />
+          <p>*Please , Fill out ALl</p>
+
+          <label for="date">date</label>
+          <input type="text" id="date" />
+          <p>*Please , Fill out ALl</p>
+
+          <label for="name">name</label>
+          <input type="name" id="name" />
+          <p>*Please , Fill out ALl</p>
+
+          <label for="description">description</label>
+          <input type="text" id="description" />
+          <p>*Please , Fill out ALl</p>
+
+          <input type="submit" name="submit" id="submit" />
+        </form>
+      </div>
+
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Delete</th>
+              <th>Update</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- add -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./assets/js/add.js"></script>
+  </body>
+</html>
